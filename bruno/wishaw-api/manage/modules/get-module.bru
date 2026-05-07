@@ -1,0 +1,15 @@
+meta {
+  name: Get Module
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/modules/{{moduleId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  moduleId: 00000000-0000-0000-0000-000000000000
+}

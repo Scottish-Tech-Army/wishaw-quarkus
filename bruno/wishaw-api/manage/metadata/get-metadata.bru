@@ -1,0 +1,15 @@
+meta {
+  name: Get Metadata
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/metadata/{{metadataId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  metadataId: 00000000-0000-0000-0000-000000000000
+}

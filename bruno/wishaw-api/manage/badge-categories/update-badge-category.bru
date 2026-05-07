@@ -1,0 +1,22 @@
+meta {
+  name: Update Badge Category
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/badge-categories/{{badgeCategoryId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  badgeCategoryId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "displayName": "Game Mastery (Updated)",
+    "description": "Updated description for game mastery"
+  }
+}

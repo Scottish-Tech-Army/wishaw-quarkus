@@ -1,0 +1,18 @@
+meta {
+  name: Create Metadata
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/metadata
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "icon": "https://example.com/icons/minecraft.png",
+    "link": "https://example.com/modules/minecraft"
+  }
+}

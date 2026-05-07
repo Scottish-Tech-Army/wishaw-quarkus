@@ -1,0 +1,15 @@
+meta {
+  name: Get Centre
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/centres/{{centreId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  centreId: 00000000-0000-0000-0000-000000000001
+}

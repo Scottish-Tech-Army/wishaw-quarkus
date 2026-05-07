@@ -1,0 +1,21 @@
+meta {
+  name: Submit Challenge
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/me/challenges/{{challengeId}}/submit
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  challengeId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "noteText": "I completed this challenge by building a shelter on day one."
+  }
+}

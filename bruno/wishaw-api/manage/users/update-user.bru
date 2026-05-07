@@ -1,0 +1,25 @@
+meta {
+  name: Update User
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/users/{{userId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  userId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "role": "PLAYER",
+    "active": true,
+    "password": null,
+    "metadataId": null,
+    "parentId": null
+  }
+}

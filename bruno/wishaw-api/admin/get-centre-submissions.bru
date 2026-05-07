@@ -1,0 +1,15 @@
+meta {
+  name: Get Centre Submissions
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/admin/centre/submissions
+  body: none
+  auth: none
+}
+
+params:query {
+  status: SUBMITTED
+}
