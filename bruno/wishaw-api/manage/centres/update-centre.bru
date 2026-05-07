@@ -1,0 +1,22 @@
+meta {
+  name: Update Centre
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/centres/{{centreId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  centreId: 00000000-0000-0000-0000-000000000001
+}
+
+body:json {
+  {
+    "name": "Edinburgh YMCA (Updated)",
+    "active": true
+  }
+}

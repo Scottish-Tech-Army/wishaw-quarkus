@@ -1,0 +1,22 @@
+meta {
+  name: Create Challenge
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/challenges
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "displayName": "Build a shelter",
+    "description": "Survive your first night by building a shelter",
+    "moduleId": "00000000-0000-0000-0000-000000000000",
+    "badgeCategoryId": "00000000-0000-0000-0000-000000000000",
+    "xpValue": 10,
+    "metadataId": null
+  }
+}

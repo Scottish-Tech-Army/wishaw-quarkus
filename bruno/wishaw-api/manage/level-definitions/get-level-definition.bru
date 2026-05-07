@@ -1,0 +1,15 @@
+meta {
+  name: Get Level Definition
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/level-definitions/{{levelDefinitionId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  levelDefinitionId: 00000000-0000-0000-0000-000000000000
+}

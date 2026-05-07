@@ -1,0 +1,15 @@
+meta {
+  name: List Submissions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/manage/submissions
+  body: none
+  auth: none
+}
+
+params:query {
+  status: SUBMITTED
+}

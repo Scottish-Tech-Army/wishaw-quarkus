@@ -1,0 +1,15 @@
+meta {
+  name: Get Game
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/games/{{gameId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  gameId: 00000000-0000-0000-0000-000000000000
+}

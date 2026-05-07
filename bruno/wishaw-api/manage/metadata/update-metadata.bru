@@ -1,0 +1,22 @@
+meta {
+  name: Update Metadata
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/metadata/{{metadataId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  metadataId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "icon": "https://example.com/icons/minecraft-updated.png",
+    "link": "https://example.com/modules/minecraft-updated"
+  }
+}

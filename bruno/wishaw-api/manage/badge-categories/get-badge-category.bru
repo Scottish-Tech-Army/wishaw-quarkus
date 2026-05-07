@@ -1,0 +1,15 @@
+meta {
+  name: Get Badge Category
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/badge-categories/{{badgeCategoryId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  badgeCategoryId: 00000000-0000-0000-0000-000000000000
+}

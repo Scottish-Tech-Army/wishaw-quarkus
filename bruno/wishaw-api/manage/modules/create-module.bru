@@ -1,0 +1,20 @@
+meta {
+  name: Create Module
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/modules
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "displayName": "Minecraft Fundamentals",
+    "description": "Learn the basics of Minecraft survival and creativity",
+    "gameId": "00000000-0000-0000-0000-000000000000",
+    "metadataId": null
+  }
+}

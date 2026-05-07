@@ -1,0 +1,21 @@
+meta {
+  name: Approve Submission
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/admin/submissions/{{submissionId}}/approve
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  submissionId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "reviewerComment": "Great work!"
+  }
+}

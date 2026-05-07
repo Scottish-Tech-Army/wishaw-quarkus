@@ -1,0 +1,21 @@
+meta {
+  name: Reject Submission
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/admin/submissions/{{submissionId}}/reject
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  submissionId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "reviewerComment": "Please provide more detail in your evidence."
+  }
+}
