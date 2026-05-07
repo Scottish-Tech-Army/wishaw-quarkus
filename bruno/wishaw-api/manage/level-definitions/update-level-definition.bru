@@ -1,0 +1,23 @@
+meta {
+  name: Update Level Definition
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/level-definitions/{{levelDefinitionId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  levelDefinitionId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "name": "Bronze",
+    "minXp": 0,
+    "maxXp": 50
+  }
+}

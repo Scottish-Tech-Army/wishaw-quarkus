@@ -1,0 +1,17 @@
+meta {
+  name: Create Centre
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/centres
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Edinburgh YMCA"
+  }
+}

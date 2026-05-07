@@ -1,0 +1,15 @@
+meta {
+  name: Get Challenge
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/challenges/{{challengeId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  challengeId: 00000000-0000-0000-0000-000000000000
+}

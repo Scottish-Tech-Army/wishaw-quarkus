@@ -1,0 +1,19 @@
+meta {
+  name: Create Level Definition
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/level-definitions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Bronze",
+    "minXp": 0,
+    "maxXp": 30
+  }
+}

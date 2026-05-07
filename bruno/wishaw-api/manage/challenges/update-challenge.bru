@@ -1,0 +1,25 @@
+meta {
+  name: Update Challenge
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/challenges/{{challengeId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  challengeId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "displayName": "Build a shelter (Updated)",
+    "description": "Updated description",
+    "badgeCategoryId": "00000000-0000-0000-0000-000000000000",
+    "xpValue": 15,
+    "metadataId": null
+  }
+}

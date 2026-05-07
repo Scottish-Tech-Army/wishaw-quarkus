@@ -1,0 +1,18 @@
+meta {
+  name: Create Badge Category
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/manage/badge-categories
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "displayName": "Game Mastery",
+    "description": "Skills and achievements within specific games"
+  }
+}

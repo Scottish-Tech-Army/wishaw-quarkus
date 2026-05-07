@@ -1,0 +1,22 @@
+meta {
+  name: Update Game
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/games/{{gameId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  gameId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "displayName": "Minecraft (Updated)",
+    "active": true
+  }
+}

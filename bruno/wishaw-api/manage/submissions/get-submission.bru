@@ -1,0 +1,15 @@
+meta {
+  name: Get Submission
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/manage/submissions/{{submissionId}}
+  body: none
+  auth: none
+}
+
+vars:pre-request {
+  submissionId: 00000000-0000-0000-0000-000000000000
+}

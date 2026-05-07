@@ -1,0 +1,25 @@
+meta {
+  name: Update Module
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/manage/modules/{{moduleId}}
+  body: json
+  auth: none
+}
+
+vars:pre-request {
+  moduleId: 00000000-0000-0000-0000-000000000000
+}
+
+body:json {
+  {
+    "displayName": "Minecraft Fundamentals (Updated)",
+    "description": "Updated description",
+    "gameId": "00000000-0000-0000-0000-000000000000",
+    "active": true,
+    "metadataId": null
+  }
+}
